@@ -1,0 +1,18 @@
+.limiter
+  .container-table100
+    .wrap-table100
+      .table100.ver3.m-b-110
+        table(data-vertable='ver3')
+          thead
+            tr.row100.head
+              th.column100.column1(data-column='column1') #
+              th.column100.column2(data-column='column2') Nama Poli
+              th.column100.column3(data-column='column3') Jumlah Antrian
+              
+          tbody
+          each val, index in daftarPoli
+            tr.row100(onclick=`location.href='/poli/${val.idPoli}'`)
+              td.column100.column1(data-column='column1') #{index + 1}
+              td.column100.column2(data-column='column2') #{val.namaPoli}
+              td.column100.column3(data-column='column3') #{val.jumlahAntrian}
+          

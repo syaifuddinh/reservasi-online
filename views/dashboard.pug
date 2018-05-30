@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+  head
+    title Table V03
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // ===============================================================================================
+    link(rel='icon', type='image/png', href='/assets/images/icons/favicon.ico')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='/assets/vendor/bootstrap/css/bootstrap.min.css')
+    // ===============================================================================================
+    link(rel='stylesheet', type='text/css', href='/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+ 
+    script(src='/assets/vendor/jquery/jquery-3.2.1.min.js')
+    
+    block extra-visual
+      link(rel='stylesheet', type='text/css', href='/assets/vendor/animate/animate.css')
+      // ===============================================================================================
+      link(rel='stylesheet', type='text/css', href='/assets/vendor/select2/select2.min.css')
+      // ===============================================================================================
+      link(rel='stylesheet', type='text/css', href='/assets/vendor/perfect-scrollbar/perfect-scrollbar.css')
+      // ===============================================================================================
+      link(rel='stylesheet', type='text/css', href='/assets/css/util.css')
+      link(rel='stylesheet', type='text/css', href='/assets/css/main.css')
+
+    block top-functions
+    
+  body
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='#') WebSiteName
+        ul.nav.navbar-nav
+          li.active
+            a(href='#') Home
+          li
+            a(href='#') Page 1
+          li
+            a(href='#') Page 2
+        form.navbar-form.navbar-left(action='/action_page.php')
+          .input-group
+            input.form-control(type='text', placeholder='Search', name='search')
+            .input-group-btn
+              button.btn.btn-default(type='submit')
+                i.glyphicon.glyphicon-search
+
+
+    block content  
+      include poli/daftar-poli.pug
+
+    block extra-function
+      script(src='/assets/vendor/bootstrap/js/popper.js')
+      // ===============================================================================================
+      script(src='/assets/vendor/select2/select2.min.js')
+      // ===============================================================================================
+      script(src='/assets/js/main.js')
+    // ===============================================================================================
+    script(src='/assets/vendor/bootstrap/js/bootstrap.min.js')
+
+
+

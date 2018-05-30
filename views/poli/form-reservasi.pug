@@ -1,0 +1,64 @@
+extends ../dashboard
+
+block extra-visual
+  style
+    include css/form-reservasi.css
+
+block content
+  .container
+    .agile_info
+      .w3l_form
+        .left_grid_info
+          h3 Selamat Datang !
+          h4 Lorem ipsum dolor sit amet, nulla consectetur adipiscing elit Sed.
+          p
+            | Nam eleifend velit eget dolor vestibulum ornare. Vestibulum est nulla, fermentum eget euismod et, tincidunt at dui. Nulla tellus nisl, semper id justo vel, rutrum finibus risus. Cras vel auctor odio.
+          ul.social_section_1info
+            li
+              a.w3_facebook(href='#')
+                i.fa.fa-facebook
+            li
+              a.w3_twitter(href='#')
+                i.fa.fa-twitter
+            li
+              a.w3_instagram(href='#')
+                i.fa.fa-instagram
+            li
+              a.w3_google(href='#')
+                i.fa.fa-google-plus
+            li
+              a.w3_pinterest(href='#')
+                i.fa.fa-pinterest
+            li
+              a.w3_vimeo(href='#')
+                i.fa.fa-vimeo
+      .w3_info
+        h2 Create An Account
+        p Vestibulum est nulla, fermentum eget euismod et, tincidunt at dui dolor sit.
+        form(action='#', method='post')
+          .input-group
+            span
+              i.fa.fa-user(aria-hidden='true')
+            input(type='text', placeholder='First Name', required='')
+          .input-group
+            span
+              i.fa.fa-user(aria-hidden='true')
+            input(type='text', placeholder='Last Name', required='')
+          .input-group
+            span
+              i.fa.fa-envelope(aria-hidden='true')
+            input(type='email', placeholder='Email', required='')
+          .input-group
+            span
+              i.fa.fa-lock(aria-hidden='true')
+            input(type='Password', placeholder='Password', required='')
+          .input-group
+            span
+              i.fa.fa-lock(aria-hidden='true')
+            input(type='Password', placeholder='Confirm Password', required='')
+          button.btn.btn-danger.btn-block(type='submit') Submit
+      .clear
+  .footer
+    p
+      | © Interior Register form 2018. All Rights Reserved | Design by 
+      a(href='https://w3layouts.com/', target='blank') W3layouts
